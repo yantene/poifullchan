@@ -13,9 +13,13 @@
 
  また、ルートディレクトリにtwitter4j.propertiesを置き、試したいアカウントのconsumerKey、consumerSecret、accessToken、accessTokenSecretをそれぞれ記述してください。
 
- > oauth.consumerKey=**consumerKey**  
- > oauth.consumerSecret=**consumerSecret**  
- > oauth.accessToken=**accessToken**  
- > oauth.accessTokenSecret=**accessTokenSecret**
+ > oauth.consumerKey=*consumerKey*  
+ > oauth.consumerSecret=*consumerSecret*  
+ > oauth.accessToken=*accessToken*
+ > oauth.accessTokenSecret=*accessTokenSecret*
+
+* sbtでビルドする
+
+ sbtを使ってjarファイルを生成してください。
 
  これでとりあえずは使えるようになります。具体的な使い方についてはソースコードを参照してください。
