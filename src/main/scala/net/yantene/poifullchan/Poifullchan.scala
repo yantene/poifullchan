@@ -10,6 +10,3 @@ object Poifullchan {
 		twitterStream.user
 	}
 }
-
-//3255
-//3169
