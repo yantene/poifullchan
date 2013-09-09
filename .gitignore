@@ -1,5 +1,5 @@
 #いぐのあああああ
 
 target/
-lib/
+*.jar
 twitter4j.properties
