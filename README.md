@@ -15,8 +15,8 @@
 
  > oauth.consumerKey=*consumerKey*  
  > oauth.consumerSecret=*consumerSecret*  
- > oauth.accessToken=*accessToken*
- > oauth.accessTokenSecret=*accessTokenSecret*
+ > oauth.accessToken=*accessToken*  
+ > oauth.accessTokenSecret=*accessTokenSecret*  
 
 * sbtでビルドする
 
