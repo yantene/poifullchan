@@ -21,6 +21,7 @@ class PoifullBehavior {
 	var yesterday = Calendar.getInstance(Locale.JAPAN)
 
 	def reaction(status: Status) {
+    print(status.getText)
 		var addition = 1
 
 		//そのツイートが語彙収集に値するなら収集する
@@ -28,7 +29,6 @@ class PoifullBehavior {
 
 		//そのツイートが自分へのリプライなら返信する
 		if (status.getInReplyToUserId == 1229249964) addition += reply(status)
-
 		//受信したツイート内容からのポイント計算
 		addition += calcPoint(status.getText)
 

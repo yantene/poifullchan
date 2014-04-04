@@ -1,9 +1,18 @@
 import AssemblyKeys._
 
-name := "Poifullchan"
+lazy val buildSettings = Seq(
+  name := "poifullchan",
+  version := "0.9",
+  organization := "net.yantene.poifullchan",
+  scalaVersion := "2.10.3"
+)
 
-version := "0.9"
+val app = (project in file("app")).
+  settings(buildSettings: _*).
+  settings(assemblySettings: _*).
+  settings(
+  )
 
-scalaVersion := "2.10.0"
+jarName in assembly := "poifullchan.jar"
 
-assemblySettings
+mainClass in assembly := Some("net.yantene.poifullchan.Poifullchan")

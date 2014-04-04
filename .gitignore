@@ -1,5 +1,7 @@
 #いぐのあああああ
 
+Accounts/
 target/
+vocabulary
 *.jar
 twitter4j.properties
