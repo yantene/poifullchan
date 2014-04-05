@@ -6,7 +6,7 @@ object Poifullchan {
 
   def main(args: Array[String]) {
     val twitterStream = new TwitterStreamFactory().getInstance
-      twitterStream.addListener(new PoifullStream)
-      twitterStream.user
+    twitterStream.addListener(new PoifullStream)
+    twitterStream.user
   }
 }

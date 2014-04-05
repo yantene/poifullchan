@@ -18,10 +18,6 @@ class SentenceGenerator {
 		Tagger.wakati(str.replaceAll(rmRgExpr, "")).foreach(morpheme => words = morpheme :: words)
 		words = "__SENTENCE_END__" :: words
 
-		words.reverse.foreach(word=>{
-			println(word)
-		})
-		
 		//語彙に新語を追加
 		vocabulary = vocabulary ::: words.reverse
 

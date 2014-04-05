@@ -152,7 +152,6 @@ class PoifullBehavior {
 
 	def tweet(str: String) {
 		twitter.updateStatus(str)
-		//println(str)
 	}
 
 	def reply(str: String, status: Status) {
