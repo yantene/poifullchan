@@ -21,7 +21,6 @@ class PoifullBehavior {
 	var yesterday = Calendar.getInstance(Locale.JAPAN)
 
 	def reaction(status: Status) {
-    print(status.getText)
 		var addition = 1
 
 		//そのツイートが語彙収集に値するなら収集する
@@ -159,7 +158,6 @@ class PoifullBehavior {
 			val statusUpdate = new StatusUpdate("@" + status.getUser.getScreenName + " " + str)
 			statusUpdate.setInReplyToStatusId(status.getId)
 			twitter.updateStatus(statusUpdate)
-			//println("@" + status.getUser.getScreenName + " " + str)
 		}
 	}
 
