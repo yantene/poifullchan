@@ -13,7 +13,7 @@ class PoifullStream extends UserStreamAdapter {
   //フォロー返し
   override def onFollow(source: User, target: User) {
     if (target.getId == 1229249964) poifullBehavior.follow(source.getId)
-  }
+    }
 
   //HomeTLに新しいツイートが流れてきた
   override def onStatus(status: Status) {
@@ -23,7 +23,7 @@ class PoifullStream extends UserStreamAdapter {
     //一般のツイートであれば、リアクションをする
     if(status.getUser.getId != 1229249964 && !status.isRetweet) poifullBehavior.reaction(status)
 
-    //普通のツイートをする
+      //普通のツイートをする
     twtCnt = poifullBehavior.monologue(twtCnt)
   }
 }
